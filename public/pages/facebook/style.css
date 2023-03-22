@@ -1,0 +1,86 @@
+.main{
+    display: flex;
+}
+.left{
+    flex:1;
+    text-align: center;
+    
+}
+.right{
+    flex:1;
+    justify-content: center;
+    
+}
+.logo{
+    width: 300px;
+    height: 106px;
+    margin-left: 220px;
+}
+h2{
+    margin-left: 100px;
+    line-height: 8px;
+    font-weight: 100;
+}
+.h2{
+    margin-left:0px;
+}
+*{
+    margin:0;
+    padding: 0;
+}
+form{
+    margin-top: 20%;
+    margin-left: 20%;
+    box-shadow: 2px 2px 2px 2px;
+    text-align: center;
+    width: 350px;
+    height: 300px;
+    border-radius: 8px;
+}
+form>input{
+    padding: 10px;
+    margin-top: 20px;
+    width: 300px;
+    border-radius: 5px;
+    
+}
+#login{
+    width:325px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    background-color:rgb(101, 101, 255);
+    color:aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+#new_acc{
+    width:200px;
+    padding: 10px;
+    margin-top: 30px;
+    background-color:rgb(4, 234, 4);
+    color:aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+.bottom{
+    margin-top: 20px;
+    margin-left: 180px;
+}
+.link{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

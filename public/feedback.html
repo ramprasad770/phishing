@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="design.css">
+    <style>
+        table{
+    margin-top: 10px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.feedback_form{
+    height: 440px;
+    width: 500px;
+    background-color: rgb(246, 248, 250);
+    border:2px solid black;
+    border-radius: 8px;
+}
+img{
+    height:400px;
+    width: 400px;
+    margin-left: 100px;
+}
+.form_input{
+    height: 30px;
+    width: 300px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin:10px 0px;
+    padding:3px 10px;
+}
+.form_msg{
+    height:100px;
+    width: 300px;
+    background-color: white;
+    border:2px solid black;
+    border-radius: 5px;
+    margin: 10px 0px;
+    padding: 3px 10px;
+    text-align: justify;
+    resize: none;
+}
+.btn{
+    margin-top: 5px;
+    padding: 8px 30px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(253, 81, 81);
+}
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+            <nav class="nav_bar">
+                <a href=index.html>Home</a>
+                <a href=developers.html>Developers</a>
+                <a href="https://safebrowsing.google.com/safebrowsing/report_phish/?hl=en">Report a site</a>
+                <a href=instructions.html>Instructions</a>
+                <a href=feedback.html>Feedback</a>
+                <a href=about.html>About</a>
+            </nav>
+        <h1>Feedback</h1>
+</header>
+<main>
+    <table>
+        <tr>
+            <td><img src="pics/project_icons/customer-feedback-calicut.png" alt="feedback_image"></td>
+            <td>
+                <form class="feedback_form" onsubmit="sendMsg(); reset(); return false;">
+                    <h2 style="text-align: left; margin:20px;">GET IN TOUCH</h2>
+                    <input type="text" class="form_input" placeholder="your name" id="name" name="name" autocomplete="off" required>
+                    <input type="text" class="form_input" placeholder="Email Id" id="email" name="email" autocomplete="off" required>
+                    <input type="text" class="form_input" placeholder="Phone no." id="ph_num" name="ph_num" autocomplete="off" required>
+                    <textarea class="form_msg"  id="msg" name="msg" autocomplete="off">How can we help you?</textarea><br>
+                    <input class="btn" type="submit">
+                </form>
+            </td>
+        </tr>
+    </table>
+</main>
+<footer>
+    <p>&copy; 2023 | Rise Krishna Sai Prakasam CSE Students.</p>
+    <p>Made with ❤ in india</p>    
+</footer>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    function sendMsg(){
+        var name=document.getElementById("name").value;
+        var email=document.getElementById("email").value;
+        var ph_num=document.getElementById("ph_num").value;
+        var msg=document.getElementById("msg").value;
+        Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "198a1a05c1ram@gmail.com",
+    Password : "5BFDCD6273ABA91869963D96E2321381941B",
+    To : 'padevenkataramprasad@gmail.com',
+    From :'198a1a05c1ram@gmail.com',
+    Subject:'You got feedback from '+name,
+    Body : "Details of sender <br>"+
+    "Name :"+name+"<br>"+
+    "Email :"+email+"<br>"+
+    "Phone number :"+ph_num+"<br>"+
+    "Feedback :<br>"+msg
+}).then(
+  message => alert(message)
+);
+    }
+</script>
+</body>
+</html>

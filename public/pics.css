@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+table{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+.profile_pics{
+    height:150px;
+    width: 150px;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 100%;
+}
+table pre{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo{
+    height: 30px;
+    width:30px;
+}

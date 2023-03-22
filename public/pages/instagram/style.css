@@ -1,0 +1,44 @@
+.form1{
+    margin-top:80px;
+    padding-top: 20px;
+    border: 1px solid black;
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.form2{
+    margin-top: 20px;
+    border: 1px solid black;
+    width :350px;
+    height: 50px;
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.box1{
+    border: 2px solid black;
+    width: 70%;
+    margin-top:20px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    text-align: center;
+}
+button{
+    background-color:rgb(147, 221, 248);
+    color: aliceblue;
+    font-weight: bolder;
+}
+.link1{
+color: rgb(74, 153, 182);
+text-decoration: none;
+font-weight: bolder;
+}
+.link2{
+    text-decoration: none;
+}
+.p1{
+    margin:0;
+    margin-top: 10px;
+}
